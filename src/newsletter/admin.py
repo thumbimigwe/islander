@@ -9,6 +9,8 @@ class SignUpAdmin(admin.ModelAdmin):
     list_display = ["__str__", "full_name", "timeStamp", "updated",]
     form = SignUpForm
 #    class Meta:
-#        model = SignUp
+#    model = SignUp
+
+
 
 admin.site.register(SignUp, SignUpAdmin)
